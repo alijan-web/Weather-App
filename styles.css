@@ -1,0 +1,104 @@
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1;
+  }
+  
+  .container-box {
+    padding: 10px;
+    margin: 100px auto;
+  }
+  
+  .myweather {
+    color: white;
+  }
+  
+  .container {
+    margin-top: 100px;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search input {
+    padding: 10px;
+    width: 70%;
+    margin-top: 10px;
+  }
+  
+  .search button {
+    margin-top: 10px;
+  }
+  
+  .mytemperture {
+    margin-top: 70px;
+  }
+  
+  .mytemp {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .mytemperture h3 {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .mytemperture span {
+    color: rgb(72, 255, 0);
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .search input {
+      width: 60%;
+    }
+  
+    .container-box {
+      margin-top: 50px;
+    }
+  
+    .mytemperture {
+      margin-top: 20px;
+    }
+  
+    .mytemperture h3 {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+  
+    .mytemperture span {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .search input {
+      width: 50%;
+    }
+  
+    .container-box {
+      margin-top: 30px;
+      padding: 10px;
+    }
+  
+    .mytemperture h3 {
+      font-size: 14px;
+    }
+  
+    .mytemperture span {
+      font-size: 18px;
+    }
+  }
+  
+ 

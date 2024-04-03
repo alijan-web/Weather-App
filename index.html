@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Check</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container text-center myweather">
+  <h1>Weather Check</h1>
+  <form>
+    <div class="form-group search">
+      <input type="text" class="form-control" id="cityInput" placeholder="Enter your city name">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+
+  <div class="container-box">
+    <div class="row">
+      <div class="col">
+        <img src="img/first.png" alt="Temperature Image" class="img-fluid">
+      </div>
+
+      <div class="col mytemperture">
+        <div class="mytemp">
+          <h3 class="mytemp1">Temperature : <span>25°C</span></h3>
+        </div>
+        <div class="mytemp">
+          <h3 class="mytemp2">Wind : <span>10 km/h</span></h3>
+        </div>
+        <div class="mytemp">
+          <h3 class="mytemp3">Humidity : <span>60%</span></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="background-image"></div>
+
+</body>
+</html>
