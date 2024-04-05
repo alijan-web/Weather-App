@@ -4,101 +4,63 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url('img/bg.jpg');
+    background-image: url('img/HD.jpg');
     background-size: cover;
     background-position: center;
     filter: blur(10px);
     z-index: -1;
   }
   
-  .container-box {
-    padding: 10px;
-    margin: 100px auto;
-  }
-  
-  .myweather {
-    color: white;
-  }
-  
-  .container {
-    margin-top: 100px;
-  }
-  
-  .search {
+  /* Custom styles */
+  .centered-form {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 50vh;
+
+  }
+  .weather-widget {
+    color: rgb(255, 255, 255);
+    transition: all 0.9s;
   }
   
-  .search input {
-    padding: 10px;
-    width: 70%;
-    margin-top: 10px;
+  .mybox1 {
+    transition: all 0.9s;
   }
-  
-  .search button {
-    margin-top: 10px;
+  .mybox1:hover {
+    color: #fbff00;
   }
+  .weather-box {
+    background-color: #00000077;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0);
   
-  .mytemperture {
-    margin-top: 70px;
   }
-  
-  .mytemp {
-    display: flex;
-    justify-content: space-between;
+
+  .mybox3 {
+    padding: 30px;
   }
-  
-  .mytemperture h3 {
-    color: #fff;
+  .weather-icon {
+    font-size: 48px;
+    color: #fbff00;
+  }
+
+  .weather-box img {
+    width: 130px;
+  }
+  .weather-temp {
+    font-size: 36px;
     font-weight: bold;
   }
-  
-  .mytemperture span {
-    color: rgb(72, 255, 0);
-    font-weight: bold;
+
+  .weather-description {
+    font-size: 18px;
   }
-  
+
   @media (max-width: 768px) {
-    .search input {
-      width: 60%;
-    }
-  
-    .container-box {
-      margin-top: 50px;
-    }
-  
-    .mytemperture {
-      margin-top: 20px;
-    }
-  
-    .mytemperture h3 {
-      font-size: 16px;
-      margin-bottom: 5px;
-    }
-  
-    .mytemperture span {
-      font-size: 20px;
+    .weather-box {
+      text-align: center;
     }
   }
-  
-  @media (max-width: 576px) {
-    .search input {
-      width: 50%;
-    }
-  
-    .container-box {
-      margin-top: 30px;
-      padding: 10px;
-    }
-  
-    .mytemperture h3 {
-      font-size: 14px;
-    }
-  
-    .mytemperture span {
-      font-size: 18px;
-    }
-  }
-  
- 

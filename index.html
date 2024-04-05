@@ -3,43 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather Check</title>
+  <title>Centered Input and Submit Button</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Font Awesome CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ 
 </head>
 <body>
 
-<div class="container text-center myweather">
-  <h1>Weather Check</h1>
-  <form>
-    <div class="form-group search">
-      <input type="text" class="form-control" id="cityInput" placeholder="Enter your city name">
-      <button type="submit" class="btn btn-primary">Submit</button>
+<div class="container">
+  <div class="row centered-form">
+    <div class="col-md-4">
+      <form>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Enter your input">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </div>
-  </form>
+  </div>
+</div>
 
-  <div class="container-box">
-    <div class="row">
-      <div class="col">
-        <img src="img/first.png" alt="Temperature Image" class="img-fluid">
+
+<div class="container">
+  <div class="row weather-widget">
+    <div class="col-md-4">
+      <div class="weather-box text-center mybox1">
+        <i class="fas fa-sun weather-icon"></i>
+        <div class="weather-temp">25°C</div>
+        <div class="weather-description">Sunny day</div>
       </div>
-
-      <div class="col mytemperture">
-        <div class="mytemp">
-          <h3 class="mytemp1">Temperature : <span>25°C</span></h3>
+    </div>
+    <div class="col-md-4">
+      <div class="weather-box text-center mybox2">
+        <img src="img/first.png" alt="Weather Image" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="weather-box mybox3">
+        <h4>Temperatures</h4>
+        <div class="row">
+          <div class="col-4">Morning:</div>
+          <div class="col-8">20°C</div>
         </div>
-        <div class="mytemp">
-          <h3 class="mytemp2">Wind : <span>10 km/h</span></h3>
+        <div class="row">
+          <div class="col-4">Afternoon:</div>
+          <div class="col-8">28°C</div>
         </div>
-        <div class="mytemp">
-          <h3 class="mytemp3">Humidity : <span>60%</span></h3>
+        <div class="row">
+          <div class="col-4">Evening:</div>
+          <div class="col-8">22°C</div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="background-image"></div>
 
+<div class="background-image"></div>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
