@@ -31,7 +31,7 @@
     color: #fbff00;
   }
   .weather-box {
-    background-color: #00000077;
+    background-color: #e964b635;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
@@ -58,7 +58,9 @@
   .weather-description {
     font-size: 18px;
   }
-
+#weather-name {
+  font-size: 18px;
+}
   @media (max-width: 768px) {
     .weather-box {
       text-align: center;
